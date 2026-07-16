@@ -67,6 +67,7 @@
           <li class="nav-item"><a class="nav-link" href="#features">Why it works</a></li>
           <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
           <li class="nav-item"><a class="nav-link" href="#coverage">Coverage</a></li>
+          <li class="nav-item"><a class="nav-link" href="kb/index.html">Fix Library</a></li>
           <li class="nav-item ms-lg-2"><a class="btn btn-brand px-3" href="#waitlist">Join Waitlist</a></li>
         </ul>
       </div>
@@ -83,16 +84,21 @@
         verified and AI-tuned by a working maker, not scraped by a bot. Ask in plain English and get one ranked,
         step-by-step fix for your exact printer, filament and slicer. In seconds.
       </p>
-      <form class="row g-2 align-items-center" id="hero-form" action="https://formsubmit.co/28a042f3046334028872e2c39ddd0770" method="POST">
-        <input type="hidden" name="_subject" value="New FixMyPrint AI waitlist signup!" />
+      <form id="hero-form" action="https://formsubmit.co/28a042f3046334028872e2c39ddd0770" method="POST">
+        <input type="hidden" name="_subject" value="FixMyPrint AI waitlist signup + your problem" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_next" value="https://qm121.github.io/#joined" />
-        <div class="col-sm-7">
-          <input type="email" name="email" class="form-control form-control-lg" placeholder="you@email.com" required />
+        <div class="mb-2">
+          <textarea name="problem" class="form-control" rows="2" placeholder="What's your printing problem? (e.g. first layer won't stick on Bambu P1S)" style="resize:vertical;"></textarea>
         </div>
-        <div class="col-sm-5">
-          <button type="submit" class="btn btn-brand btn-lg w-100">Join the Waitlist</button>
+        <div class="row g-2">
+          <div class="col-sm-7">
+            <input type="email" name="email" class="form-control form-control-lg" placeholder="you@email.com" required />
+          </div>
+          <div class="col-sm-5">
+            <button type="submit" class="btn btn-brand btn-lg w-100">Get Help →</button>
+          </div>
         </div>
       </form>
       <div class="success-box mt-3" id="hero-success"><i class="fa-solid fa-circle-check me-1"></i> You're on the list. Watch your inbox for early-access.</div>
@@ -248,10 +254,13 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <form id="waitlist-form" action="https://formsubmit.co/28a042f3046334028872e2c39ddd0770" method="POST">
-            <input type="hidden" name="_subject" value="New FixMyPrint AI waitlist signup!" />
+            <input type="hidden" name="_subject" value="FixMyPrint AI waitlist signup + your problem" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_next" value="https://qm121.github.io/#joined" />
+            <div class="mb-2">
+              <textarea name="problem" class="form-control" rows="2" placeholder="What's your printing problem? (e.g. stringing on my Prusa MK4 with PETG)" style="resize:vertical;"></textarea>
+            </div>
             <div class="input-group input-group-lg mb-2">
               <input type="email" name="email" class="form-control" placeholder="you@email.com" required />
               <button class="btn btn-brand" type="submit">Notify Me</button>
